@@ -18,4 +18,14 @@ class ResultModal{
     var icon:String?=null
     var geometry:Geometry?=null
 
+    var address_components:Array<AddComponent>?=null
+    var formatted_address:String?=null
+    var formatted_phone_number:String?=null
+
+    var  adr_address:String?=null
+
+    var opening_hours:OpeningHours?=null
+
+
+
 }

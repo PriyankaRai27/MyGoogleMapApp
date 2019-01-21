@@ -1,5 +1,6 @@
 package com.example.orange.myapplication.Interface
 
+import com.example.orange.myapplication.Modal.DetailPlacesModal
 import com.example.orange.myapplication.Modal.PlacesModal
 import retrofit2.Call
 import retrofit2.http.GET
@@ -9,4 +10,8 @@ interface GoogleAPIInterface
 
 { @GET
      fun getNearByPlaces(@Url url: String): Call<PlacesModal>
+
+     @GET
+
+   fun getDetailPlace(@Url url: String): Call<DetailPlacesModal>
 }
